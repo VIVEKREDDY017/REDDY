@@ -1,0 +1,132 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: rgb(209, 207, 207);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    height: 60px;
+    border-radius: 40px;
+    border-radius: 40px;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: rgb(44, 28, 28);
+}
+
+/* Contact Information Styling */
+.contact-info {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(209, 207, 207);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+}
+
+.contact-info h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(209, 207, 207);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+.line{
+    display: flex;
+    align-items: left;
+    padding: 20px;
+    /* background-color:rgb(216, 227, 237); */
+    margin-left: 5px;
+}
+.line{
+    flex: 1;
+    text-align: left;
+    margin-left: 880px;
+    margin-right: 20px;
+    margin-bottom: 250px;
+}
+.line ul{
+    display: inline-block;
+    list-style-type: none;
+
+}
+.line ul li{
+    display: inline-block;
+    margin-right: 20px;
+   
+}
+.line{
+    text-decoration: none;
+    color: #555;
+}

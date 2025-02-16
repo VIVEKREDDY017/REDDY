@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - White Printed T-Shirt</title>
+    <link rel="stylesheet" href="static/White.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="static/VIVEK.png" alt="Logo" style="width:160px;">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/account">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="product-detail-container">
+        <div class="product-detail">
+            <div class="product-images">
+                <img src="static/white.jpg" alt="White Printed T-Shirt" class="product-img">
+            </div>
+
+            <div class="product-info">
+                <h1>White Printed T-Shirt</h1>
+                <h2>$52.00</h2>
+                <p><b>Fit</b>: Oversized Fit</p><br>
+
+                <p><b>Fabric</b>: Pure Cotton (280gsm)</p><br>
+                    
+                <p><b>Color</b>: Beige</p><br>
+                    
+                <p><b>Model Size</b>: M</p><br>
+                    
+                <p><b>Male Model Size</b>: S</p><br>
+                    
+                <p>How to Style: Create an effortless look by pairing it with<br>
+                     light-washed denim or layering with a beige leather jacket.<br>
+                      Add depth and visual interest by pairing this tee with rugged<br>
+                       accessories that go in and complement your outfit. Stand out at<br>
+                        barbecues, picnics, or outdoor events with this stylish and relaxed<br> 
+                        piece that blends seamlessly with nature.</p>
+                
+                <div class="size-selection">
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                        <option value="XL">Extra Large</option>
+                    </select>
+                </div>
+
+                <button class="btn" onclick="addToCart('White Printed T-Shirt', '$52.00', 1)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Reddy E-Commerce. All Rights Reserved.</p>
+    </footer>
+
+    <script src="static/script.js"></script>
+</body>
+
+</html>

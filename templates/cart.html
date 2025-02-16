@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Your Cart</h1>
+    </header>
+
+    <section class="cart-items">
+        <ul id="cart-list">
+            <!-- Cart items will be displayed here -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Reddy E-Commerce. All Rights Reserved.</p>
+    </footer>
+
+    <script src="static/script.js"></script>
+    <script>
+        // Load cart items from localStorage and display them
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let cartList = document.getElementById('cart-list');
+        
+        if (cart.length > 0) {
+            cart.forEach(item => {
+                let li = document.createElement('li');
+                li.textContent = item.name + " - " + item.price;
+                cartList.appendChild(li);
+            });
+        } else {
+            cartList.innerHTML = "<li>Your cart is empty.</li>";
+        }
+    </script>
+
+</body>
+</html>

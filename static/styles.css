@@ -1,3 +1,21 @@
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +32,7 @@
 nav{
     flex: 1;
     text-align: left;
-    margin-left: 730px;
+    margin-left: 600px;
     margin-right: 40px;
 }
 nav ul{
@@ -156,9 +174,15 @@ p{
     background: radial-gradient(#fff,#ffd6d6);
     margin-top: 80px;
     padding: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 40px;
+    height: 500px;
 }
 .col-2 .offer-img{
-    padding: 50px;
+    padding: 30px;
+    margin-bottom: 100px;
+    height: 450px;
 }
 .small{
     color: #555;
@@ -177,56 +201,108 @@ p{
 .col-5 img:hover{
     filter: grayscale(0);
 }
-
-
-
-.footer{
-    background-color: #d0bfbf;
-    color: #8a8a8a;
-    font-size: 14px;
-    padding: 60px 0 20px;
+.Details{
+    display: flex;
+    flex-direction: column;
+    background-color: #796f6f;
 }
-.footer p{
-    color: #8a8a8a;
+.form-styling{
+    display: inline;
+    
 }
-.footer h3{
-    color: #fff;
-    margin-bottom: 20px;
-    /* background-color: #0c0c0c */
+.lable-container{
+    display: inline;
 }
-.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
-    min-width: 250px;
-    margin-bottom: 20px;
-    /* background-color: #0c0c0c */
+.VIVEK{
+    display: flex;
+    margin-left: 70px;
+    margin-right: 70px;
 }
-.footer-col-1{
-    flex-basis: 30%;
-    /* background-color: #0c0c0c */
-}
-.footer-col-2{
-    flex: 1;
+/* Email Subscription Box Styling */
+.email-subscription-box {
+    background-color: #f1f1f1;
+    padding: 30px;
     text-align: center;
-    /* background-color: #0c0c0c */
+    border-radius: 40px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1000px;
 }
-.footer-col-2 img{
-    width: 180px;
+
+.email-subscription-box h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.email-subscription-box p {
+    font-size: 16px;
+    color: #555;
     margin-bottom: 20px;
-    /* background-color: #0c0c0c */
 }
-.footer-col-3, .footer-col-4{
-    flex-basis: 12%;
+
+.email-subscription-box form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-subscription-box input[type="email"] {
+    padding: 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.email-subscription-box button {
+    padding: 12px 20px;
+    background-color: #FF5733; /* Vibrant color for call-to-action */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.email-subscription-box button:hover {
+    background-color: #ff4500; /* Darker shade on hover */
+}
+
+.app{
+    background-color: #f1f1f1;
+    padding: 30px;
     text-align: center;
-    /* background-color: #0c0c0c */
+    border-radius: 40px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
 }
-.ul{
-    list-style-type: none;
+.apps{
+    margin-right: 45px;
 }
-.footer .big .container .row .footer-col-1 h3{
-    color: #0d0202;
+.body{
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 40px;
 }
-.footer .big .container .row .footer-col-3 h3{
-    color: #0d0202;
+.apps img{
+    width: 30%;
+    margin-top: 14px;
+    margin-left: 30px;
 }
-.footer .big .container .row .footer-col-4 h3{
-    color: #0d0202;
+.links{
+    margin-left: 200px;
+}
+.Policies{
+    margin-left: 200px;  
+}
+.Follow{
+    margin-left: 200px; 
+    margin-bottom: 30px;
+}
+.apps h3{
+    margin-left: 40px;
 }

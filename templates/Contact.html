@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - E-Commerce Website</title>
+    <link rel="stylesheet" href="static/Contact.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+
+        <div class="line">
+            <nav>    
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/Products">Products</a></li>
+                    <li><a href="/About">About</a></li>
+                    <li><a href="/Contact">Contact</a></li>
+                    <li><a href="/Account">Account</a></li>
+                </ul>
+            </nav>   
+        </div>
+    </header>
+
+    <section class="contact-info">
+        <h2>Get In Touch</h2>
+        <p>If you have any questions, concerns, or feedback, feel free to reach out to us. We are here to help!</p>
+        
+        <p><strong>Address:</strong> 123 Reddy Street, hyderabad, india</p>
+        <p><strong>Email:</strong> support@Reddy.com</p>
+        <p><strong>Phone:</strong> +1 (000) 123-4567</p>
+    </section>
+
+    <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="/submit_contact" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+</html>

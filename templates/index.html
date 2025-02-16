@@ -2,6 +2,7 @@
 <html lang="en">
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>REDSTORE | Ecomemerce Website Design</title>
     <link rel="stylesheet" href="static\styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,14 +21,13 @@
              <div class="logo">
                  <img src="static/VIVEK.png"  style="width:160px">
              </div>
-             <nav>
-                 
+             <nav>    
                  <ul>
                      <li><a href="">Home</a></li>
-                     <li><a href="products.html">Products</a></li>
-                     <li><a href="">About</a></li>
-                     <li><a href="">Contact</a></li>
-                     <li><a href="">Account</a></li>
+                     <li><a href="/Products">Products</a></li>
+                     <li><a href="/About">About</a></li>
+                     <li><a href="/Contact">Contact</a></li>
+                     <li><a href="/Account">Account</a></li>
                  </ul>
              </nav>
             
@@ -66,13 +66,21 @@
         </div>
     </div>
 </div>
-<div class="small-container">
-    <h2 class="title">Featured Products</h2> 
-    <div class="row">
+<h2 class="title">Featured Products</h2>
+<div class="VIVEK">
         <div class="col-4">
-            <img src="static/white.jpg" class="product-img">
+            <a href="{{ url_for('show_product_detail_white') }}" target="_blank">
+                <img src="static/white.jpg" class="product-img" alt="White Printed T-Shirt">
+            </a>
             <h4>White Printed T-Shirt</h4>
             <p>$52.00</p>
+            <!-- Add to Cart Button -->
+            <!-- <button class="btn add-to-cart">Add to Cart</button> -->
+        </div>  
+        <div class="col-4">
+            <img src="static/multicoloured.webp" class="product-img">
+            <h4>Red Printed T-Shirt</h4>
+            <p>$57.00</p>
         </div>
         <div class="col-4">
             <img src="static/multicoloured.webp" class="product-img">
@@ -130,7 +138,7 @@
 </div>
 
 
-<div class="footer">
+<!-- <div class="footer">
     <div class="big">
     <div class="container">
         <div class="row">
@@ -164,6 +172,56 @@
         </div>
     </div>
 </div>
+</div> -->
+
+<div>
+    <div class="email-subscription-box">
+        <h1><b>Join the Club</b></h1><br>
+        <p><b>Stay tuned for more fashion updates and exclusive offers!</b></p>
+        <form action="/submit_email" method="POST">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn">Subscribe</button>
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="app">
+        <div class="apps">
+            <h3>Download our App</h3>
+            <img src="static/apple.svg"><img src="static/android.png">
+        </div>
+        <div class="links">
+            <h3>Useful Links</h3>
+            <br>
+            <ul>
+                <li>Coupons</li>
+                <li>Blog post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliates</li>
+            </ul>
+        </div>
+        <div class="Policies">
+            <h3>Policies</h3>
+            <ul>
+                <li>Return Request</li>
+                <li>Exchange Request</li>
+                <li>Terms and Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Return & Exchange Policy</li>
+                <li>Shipping and Delivery Policy</li>
+            </ul>
+        </div>
+        <div class="Follow">
+            <h3>Follow us</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>You Tube</li>
+            </ul>
+        </div>
+    </div>
 </div>
 
     
